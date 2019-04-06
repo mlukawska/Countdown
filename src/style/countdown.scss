@@ -1,0 +1,47 @@
+  
+.countdown {
+    margin: 20px auto;
+    color: $second-color;
+}
+
+.countdown-col {
+    display: inline-block;
+    font-family: $font-additional;
+}
+
+.countdown-col-element {
+    width: 250px;
+    display: inline-block;
+    padding: 2vh 2vw;
+    margin: 0 2vw;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid $second-color;
+    border-radius: 3%;
+    background-color: $third-color;
+}
+
+.countdown-col-element p {
+    padding: 2vh;
+    margin: 2vw;
+    font-size: 5rem;
+    border: 3px solid $first-color;
+    border-radius: 3%;
+    background-color: darken($third-color, 20%);
+}
+
+.countdown-col-element span {
+    font-size: 2rem;
+}
+
+.event-name {
+    padding: 12vh;
+    font-size: 3rem;
+    color: $first-color;
+    font-weight: 700;
+}
+
+.event-name span {
+    font-family: $font-additional;
+    font-weight: 700;
+}

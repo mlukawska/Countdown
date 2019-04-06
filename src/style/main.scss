@@ -1,0 +1,16 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-basic ;
+    text-align: center;
+    background-color: lighten($third-color, 20%);
+}
+
+.app-header {
+  padding: 7vh;
+  font-size: 3rem;
+  color: $first-color;
+  font-family: $font-additional;
+  
+}
+
