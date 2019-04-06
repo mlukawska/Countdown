@@ -3,14 +3,16 @@ body {
     padding: 0;
     font-family: $font-basic ;
     text-align: center;
-    background-color: lighten($third-color, 20%);
+    background-color: lighten($third-color, 30%);
 }
 
-.app-header {
-  padding: 7vh;
-  font-size: 3rem;
+.event-name {
+  padding: 2vh;
+  font-size: 4rem;
   color: $first-color;
-  font-family: $font-additional;
-  
+  font-family: $font-additional; 
 }
 
+.event-name span {
+  font-weight: 700;
+}

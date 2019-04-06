@@ -1,6 +1,6 @@
   
 .countdown {
-    margin: 20px auto;
+    margin: 10px auto;
     color: $second-color;
 }
 
@@ -12,8 +12,8 @@
 .countdown-col-element {
     width: 250px;
     display: inline-block;
-    padding: 2vh 2vw;
-    margin: 0 2vw;
+    padding: 2vw;
+    margin: 2vw;
     display: flex;
     flex-direction: column;
     border: 3px solid $second-color;
@@ -22,26 +22,14 @@
 }
 
 .countdown-col-element p {
-    padding: 2vh;
-    margin: 2vw;
+    padding: 3vh;
+    margin: 1vw;
     font-size: 5rem;
     border: 3px solid $first-color;
     border-radius: 3%;
-    background-color: darken($third-color, 20%);
+    background-color: darken($third-color, 25%);
 }
 
 .countdown-col-element span {
     font-size: 2rem;
-}
-
-.event-name {
-    padding: 12vh;
-    font-size: 3rem;
-    color: $first-color;
-    font-weight: 700;
-}
-
-.event-name span {
-    font-family: $font-additional;
-    font-weight: 700;
 }

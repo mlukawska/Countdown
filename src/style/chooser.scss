@@ -1,0 +1,31 @@
+.chooser {
+    font-size: 2rem;
+    font-family: $font-basic;
+    color: $first-color;
+    padding: 5vh;
+}
+
+.chooser-buttons {
+    margin: 0 auto;
+    width: 60vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    color: $first-color;
+    background-color: lighten($third-color, 30%);
+    font-size: 1.5rem;
+    font-family: $font-basic;
+    border: 4px solid $third-color;
+    border-radius: 5%;
+    padding: 1vh 2vw;
+    text-align: center;
+}
+
+  
+button:hover {
+    background-color: $third-color;
+    color: $second-color;
+    cursor: pointer;
+}
