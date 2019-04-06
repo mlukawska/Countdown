@@ -7,12 +7,16 @@ body {
 }
 
 .event-name {
-  padding: 2vh;
-  font-size: 4rem;
+  margin: 4vh;
+  font-size: 2rem;
   color: $first-color;
-  font-family: $font-additional; 
+  font-family: $font-basic; 
 }
 
 .event-name span {
-  font-weight: 700;
+  color: darken($third-color, 25%);
+  font-family: $font2;
+  font-size: 5rem;
+  word-spacing: 1rem;
+  letter-spacing: 1rem;
 }

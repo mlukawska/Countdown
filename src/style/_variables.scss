@@ -1,9 +1,25 @@
 $first-color: #222;
 $second-color: #fff;
-$third-color: rgb(42, 179, 197);
+// $third-color: rgb(42, 179, 197);
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css?family=Lora:400italic');
+@import url('https://fonts.googleapis.com/css?family=Fredericka+the+Great');
+@import url('https://fonts.googleapis.com/css?family=Gugi');
+
+
 
 $font-basic: 'Montserrat', sans-serif;
 $font-additional: 'Lora:400italic', sans-serif;
+$font1: 'Fredericka the Great', cursive;
+$font2: 'Gugi', cursive;
+$font3: 'Londrina Outline', cursive;
+
+
+$s-min: 20;
+$s-max: 70;
+$l-min: 30;
+$l-max: 90;
+
+
+$third-color: hsl(random(360),$s-min+random($s-max+-$s-min),$l-min+random($l-max+-$l-min));
