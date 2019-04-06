@@ -1,5 +1,4 @@
 import React from 'react';
-// import PropTypes from 'prop-types'
 
 class Countdown extends React.Component {
   constructor(props) {
@@ -24,8 +23,8 @@ class Countdown extends React.Component {
     this.stop();
   }
   
-  calculateCountdown(endDate) {
-    let diff = (Date.parse(new Date(endDate)) - Date.parse(new Date())) / 1000;
+  calculateCountdown(eventDate) {
+    let diff = (Date.parse(new Date(eventDate)) - Date.parse(new Date())) / 1000;
     if (diff <= 0) return false;
 
     const timeLeft = {
@@ -36,15 +35,15 @@ class Countdown extends React.Component {
       sec: 0
     };
 
-    if (diff >= (365 * 86400)) { // 365 * 24 * 60 * 60
+    if (diff >= (365 * 86400)) {
       timeLeft.years = Math.floor(diff / (365 * 86400));
       diff = diff - timeLeft.years * 365 * 86400;
     }
-    if (diff >= 86400) { // 24 * 60 * 60
+    if (diff >= 86400) {
       timeLeft.days = Math.floor(diff / 86400);
       diff = diff - timeLeft.days * 86400;
     }
-    if (diff >= 3600) { // 60 * 60
+    if (diff >= 3600) {
       timeLeft.hours = Math.floor(diff / 3600);
       diff = diff - timeLeft.hours * 3600;
     }
@@ -103,12 +102,5 @@ class Countdown extends React.Component {
   }
 }
 
-// Countdown.propTypes = {
-//   date: PropTypes.string.isRequired
-// };
-
-// Countdown.defaultProps = {
-//   date: new Date()
-// };
 
 export default Countdown;
